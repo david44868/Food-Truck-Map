@@ -1,9 +1,9 @@
 from flask import Flask, jsonify
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 import requests
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "https://food-truck-map-five.vercel.app/"}})
+CORS(app)
 
 @app.route('/')
 def index():
