@@ -34,7 +34,12 @@ function App() {
   });
 
   useEffect(() => {
-    fetch(`https://food-truck-map.onrender.com/food_trucks`)
+    fetch(`https://food-truck-map.onrender.com/food_trucks`, {
+      mode: 'cors',
+      headers: {
+        'Access-Control-Allow-Origin': 'https://food-truck-map-five.vercel.app'
+      }
+    })
       .then(response => response.json())
       .then(data => {
         setTrucks(data);
