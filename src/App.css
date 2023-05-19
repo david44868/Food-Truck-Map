@@ -42,7 +42,15 @@
 }
 
 #search {
-  
+  position: absolute;
+  top: 90px;
+  left: 10px;
+  z-index: 1000;
+  font-size: large;
+  width: 300px;
+  border-radius: 5px;
+  border: 2px solid rgb(122, 120, 120);
+  padding: 8px;
 }
 
 .green {
