@@ -34,7 +34,7 @@ function App() {
   });
 
   useEffect(() => {
-    fetch(`http://localhost:5000/food_trucks`)
+    fetch(`https://food-truck-map.onrender.com/food_trucks`)
       .then(response => response.json())
       .then(data => {
         setTrucks(data);

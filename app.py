@@ -3,7 +3,7 @@ from flask_cors import CORS
 import requests
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
+CORS(app, resources={r"/*": {"origins": "https://food-truck-map-five.vercel.app/"}})
 
 @app.route('/')
 def index():
