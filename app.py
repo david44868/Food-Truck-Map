@@ -24,11 +24,14 @@ def food_trucks():
             food_items = "N/A"
         if 'address' in truck:
             address = truck['address']
+        if 'status' in truck:
+            status = truck['status']
         column = {
             "location": location,
             "applicant": applicant,
             "food_items": food_items,
-            "address": address
+            "address": address,
+            "status": status
         }
         trucks.append(column)
     return jsonify(trucks)
